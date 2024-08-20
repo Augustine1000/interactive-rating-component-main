@@ -38,6 +38,7 @@ line-height: 1.8;
     background: linear-gradient(to bottom,hsl(213, 19%, 18%),hsl(216, 12%, 8%)); 
     padding: 3rem;
     border-radius: 0.75rem;
+    max-width: 500px;
 }
 
 .main-container img{
