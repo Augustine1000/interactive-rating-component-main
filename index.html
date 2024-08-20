@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <title>Frontend Mentor | Interactive rating component</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  
 </head>
 <body>
-    <div class="rating-container">
-        <img src="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z.svg" alt="Rating Icon" class="rating-icon">
-        <h2>How did we do?</h2>
-        <p> Please let us know how we did with your support request. All feedback is appreciated 
-            to help us improve our offering!
-          </p>
-    <div class="rating-buttons">
-            <button class="rating-btn" data-rating="1">1</button>
-            <button class="rating-btn" data-rating="2">2</button>
-            <button class="rating-btn" data-rating="3">3</button>
-            <button class="rating-btn" data-rating="4">4</button>
-            <button class="rating-btn" data-rating="5">5</button>
-     </div>
-    <button id="submit-btn" class="submit-btn" disabled>Submit</button>
-     </div>
-    <div class="thank-you-message hidden">
-        <h2>Thank you!</h2>
-        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-        <p class="selected-rating"></p>
-    </div>
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">DAVID ALAO</a>.
-    </div>
 
+  <!-- Rating state start -->
+
+  <div class="main-container">
+    <img src="./images/icon-star.svg" alt="">
+    <h1>How did we do?</h1>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
+
+  <ul>
+    <li><button class="rating-btn" data-rating="1">1</button></li>
+    <li><button class="rating-btn" data-rating="2">2</button></li> 
+    <li><button class="rating-btn" data-rating="3">3</button></li>
+    <li><button class="rating-btn" data-rating="4">4</button></li>
+    <li><button class="rating-btn" data-rating="5">5</button></li>
+  </ul>
+
+ 
+<button class="btn-submit" id="Submit"> Submit</button>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="thank-you hidden" >
+    <img src="./images/illustration-thank-you.svg" alt="">
+    <p class="gray">
+      You selected 
+      <span id="rating"></span>
+      out of 5
+
+    </p>
+
+  <h2>Thank you!</h2>
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </p>
+<button class="btn-submit" id="Rate-Again">Rate Again</button>
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
