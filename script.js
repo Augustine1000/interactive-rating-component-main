@@ -1,12 +1,11 @@
-function App() {
+export default function Home() {
     return (
       <div>
         <img src="./images/icon-star.svg" alt=""/>
       </div>
     );
   }
-
-function App() {
+export default function Home() {
     return (
       <div>
         <img src="./images/illustration-thank-you.svg" alt=""/>
@@ -14,7 +13,6 @@ function App() {
     );
   }
 
-  
 
 const mainContainer = document.querySelector(".main-container")
 const thanksContainer = document.querySelector(".thank-you")
