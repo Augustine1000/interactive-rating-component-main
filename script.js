@@ -1,3 +1,21 @@
+function App() {
+    return (
+      <div>
+        <img src="./images/icon-star.svg" alt=""/>
+      </div>
+    );
+  }
+
+function App() {
+    return (
+      <div>
+        <img src="./images/illustration-thank-you.svg" alt=""/>
+      </div>
+    );
+  }
+
+  
+
 const mainContainer = document.querySelector(".main-container")
 const thanksContainer = document.querySelector(".thank-you")
 const submitButton = document.getElementById("Submit")
